@@ -1,0 +1,26 @@
+/********************************
+********Global*******************
+********************************/
+body {
+  padding-top: 170px;
+  height: 850px;
+  background: linear-gradient(#ff6600, transparent 90%),
+  linear-gradient(0deg, #fff, transparent),
+  #ff6600 url('http://pre13.deviantart.net/512a/th/pre/i/2013/068/0/f/gallifrey_from_mount_perdition_by_lupus_deus_est-d3epdag.jpg') no-repeat center;
+  background-size: cover;
+  text-align:center;
+}
+
+ul{
+  list-style:none;
+}
+
+
+/********************************
+********Content-Remover**********
+********************************/
+
+.remover{
+  color:red;
+  margin-left:2rem;
+}

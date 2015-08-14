@@ -7,7 +7,7 @@
 
 ## Description
 
-_{This app receives words through a form, for which there can be definitions added through additional a respective word-specific form. Thus, a simple dictionary is created.}_
+_{This app receives words through a form, for which there can be definitions added through additional a respective word-specific form. Thus, a simple dictionary is created. Within it, both all words and specific word-entries can be deleted. While a delete-function for the definitions is planned, it is not functional yet.}_
 
 
 ## Setup
@@ -23,7 +23,7 @@ _{This app receives words through a form, for which there can be definitions add
 
 ## Technologies Used
 
-_{This app was created in Ruby and can be displayed via Sinatra & Capybara or online-services such as github&Heroku}_
+_{This app was created in Ruby and can be displayed via Sinatra & Capybara or online-services such as github&Heroku. Basic styling with css was added.}_
 
 
 ### Legal

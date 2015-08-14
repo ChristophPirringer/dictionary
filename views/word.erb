@@ -1,7 +1,7 @@
 <h2>Here are all definitions of <%= @word.word_entry() %></h2>
 
 <ul><% @word.definitions().each() do |definition| %>
-  <li><a href='/definitions/<%=definition.id() %>'><%= definition.definition_entry() %> <a href='/definitions/<%= definition.id() %>/delete'> Delete!</a></li>
+  <li><%= definition.definition_entry() %> <a href='/definitions/<%= definition.id() %>/delete' claass = "remover"> Delete!</a></li>
   <% end %>
 </ul>
 
@@ -17,8 +17,5 @@
   <button type='submit'>Add the definition!</button>
 </form>
 
-
-<a href="/words/<%= @word.id%>/definitions/new">Add to the list of definitions!</a>
-<a href="/words/<%= @word.id()%>/delete_definitions">Delete the whole list of definitions!</a>
-
+<a class="remover" href="/words/<%= @word.id()%>/delete_definitions" >Delete the whole list of definitions!</a>
 <a href="/">Return to Main Page</a>

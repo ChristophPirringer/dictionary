@@ -11,9 +11,9 @@
   <h3>The following words are already stored in the dictionary:</h3>
   <ul>
     <% @words.each() do |word| %>
-      <li><a href='/words/<%= word.id() %>'><%= word.word_entry() %></a><a href='/words/<%= word.id() %>/delete'> Exterminate!</a></li>
+      <li><a href='/words/<%= word.id() %>'><%= word.word_entry() %></a><a href='/words/<%= word.id() %>/delete' class = "remover"> Exterminate!</a></li>
     <% end %>
   </ul>
 </div>
 
-<a href='/clear'>Empty the Dictionary!!</a>
+<a href='/clear' class = "remover">Empty the Dictionary!!</a>
