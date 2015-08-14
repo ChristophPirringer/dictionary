@@ -1,4 +1,19 @@
-<h2>From here on out, you can either
-  <a href="/words"> Browse the words</a> or
-  <a href="/words/new"> Add a new one!</a>
-</h2>
+<h2>Greetings and Welcome to the Big Blue Dictionary!</h2>
+
+<h3>Enter new words here, we have space (and time):</h3>
+<form action="/" method="post">
+  <label for="word">Allons-y:</label>
+  <input id="word" name="word" type="text">
+  <button type="submit">Add The Word!</button>
+</form>
+
+<div class="content-listing">
+  <h3>The following words are already stored in the dictionary:</h3>
+  <ul>
+    <% @words.each() do |word| %>
+      <li><a href='/words/<%= word.id() %>'><%= word.word_entry() %></a><a href='/words/<%= word.id() %>/delete'> Exterminate!</a></li>
+    <% end %>
+  </ul>
+</div>
+
+<a href='/clear'>Empty the Dictionary!!</a>

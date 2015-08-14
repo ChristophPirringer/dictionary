@@ -7,7 +7,7 @@
 
 ## Description
 
-_{This app receives words through a form, for which there cam be definitions added through additional a respective word-specific form. Thus, a simple dictionary is created.}_
+_{This app receives words through a form, for which there can be definitions added through additional a respective word-specific form. Thus, a simple dictionary is created.}_
 
 
 ## Setup

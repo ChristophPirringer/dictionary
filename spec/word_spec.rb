@@ -33,6 +33,15 @@ describe(Word) do
     end
   end
 
+  describe("#delete") do
+    it("tests for the removal of a saved test_word") do
+      test_word = Word.new("BadWolf")
+      test_word.save()
+      test_word.delete()
+      expect(Word.all()).to(eq([]))
+    end
+  end
+
   describe(".clear") do
     it("tests for the empty array of @@words after saving a test_word and then clearing it") do
       test_word = Word.new("BadWolf")
@@ -87,7 +96,7 @@ end
 ##############################################
 
 describe(Definition) do
-  
+
     before() do
       Word.clear()
       Definition.clear()

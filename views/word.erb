@@ -1,9 +1,24 @@
 <h2>Here are all definitions of <%= @word.word_entry() %></h2>
 
 <ul><% @word.definitions().each() do |definition| %>
-  <li><%= definition.definition_entry() %></li>
+  <li><a href='/definitions/<%=definition.id() %>'><%= definition.definition_entry() %> <a href='/definitions/<%= definition.id() %>/delete'> Delete!</a></li>
   <% end %>
 </ul>
 
+
+<h3>Add a definition for the word "<%= @word.word_entry() %>" here:</h3>
+
+<form action="/word" method='post'>
+  <input id='word_id' name='word_id' type='hidden' value='<%= @word.id() %>'>
+
+  <label for='definition'>What does it all mean??:</label>
+  <input id='definition' name='definition' type='text'>
+
+  <button type='submit'>Add the definition!</button>
+</form>
+
+
 <a href="/words/<%= @word.id%>/definitions/new">Add to the list of definitions!</a>
+<a href="/words/<%= @word.id()%>/delete_definitions">Delete the whole list of definitions!</a>
+
 <a href="/">Return to Main Page</a>

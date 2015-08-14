@@ -27,6 +27,10 @@ class Word
     @@words.push(self)
   end
 
+  def delete
+    @@words.delete(self)
+  end
+
   define_singleton_method(:clear) do
     @@words = []
   end
@@ -48,5 +52,5 @@ class Word
   def add_definition(definition)
     @definitions.push(definition)
   end
-  
+
 end

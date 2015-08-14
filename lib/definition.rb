@@ -22,6 +22,10 @@ class Definition
     @@definitions.push(self)
   end
 
+  def delete
+    @@definitions.delete(self)
+  end
+
   define_singleton_method(:clear) do
     @@definitions = []
   end
